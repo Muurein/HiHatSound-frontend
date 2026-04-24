@@ -1,0 +1,125 @@
+@use "../../styles/abstracts/variables.scss" as v;
+
+
+header {
+    margin-bottom: 30px;
+    height: 120px;
+}
+
+#main-menu {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background: v.$primary-color;
+    color: v.$menu-text-color;
+  }
+
+  .branding {
+    max-width: 100%;
+    margin-left: 50px;
+    list-style-type: none;
+
+    .logo {
+        width: 170px;
+        height: 120px;
+    }
+  }
+}
+
+
+.hamburger {
+    display: block;
+    padding-right: 40px;
+    cursor: pointer;
+
+    i {
+        width: 50px;
+        height: 50px;
+        color: v.$menu-text-color;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+}
+
+
+.menu-content {
+    display: none;
+}
+    
+.menu-content.is-open {
+    display: block;
+    position: absolute;
+    top: 120px;
+    background: v.$primary-color;
+    width: 100%;
+
+    .menu-item {
+        border-bottom: 1px solid v.$menu-text-color;
+        color: v.$menu-text-color;
+    }
+
+    .top-item {
+        border-top: 1px solid v.$menu-text-color;
+    }
+ 
+}
+
+.no-style {
+  all: unset;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-item {
+    display: block;
+    padding-right: 30px;
+    text-align: center;
+    height: 60px;
+    color: v.$menu-text-color; 
+    line-height: 60px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+// .secondary-menu-item {
+//     display: block;
+//     text-align: center;
+//     height: $menuHeight;
+//     color: v.$menu-text-color; 
+//     line-height: $menuHeight;
+//     text-decoration: none;
+//     font-size: 16px;
+//     font-weight: 600;
+//     letter-spacing: 3px;
+// }
+  
+
+
+@media (min-width: 1024px) {
+
+   .hamburger {
+      display: none;
+    }
+
+    .menu-content {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+ 
+
+
+

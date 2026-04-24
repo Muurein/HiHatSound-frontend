@@ -1,0 +1,119 @@
+
+<!-- <header>
+    
+    <div class="branding">
+        <img class="logo" src="/assets/HiHat_logo_white_original.png" alt="logga" >
+    </div>
+
+    
+    <div class="hamburger-menu">
+        <button matIconButton [matMenuTriggerFor]="hamburgerMenu" aria-label="Hamburger-menu">
+            <mat-icon class="hamburger-icon">menu</mat-icon>
+        </button>
+
+        <mat-menu #hamburgerMenu="matMenu" panelClass="custom-menu">
+            <nav class="main-menu">
+                <ul main-menu-ul>
+                    <li class="main-menu-li current-page"><a class="main-menu-a" routerLink="/home">Hem</a></li>
+                    <li class="main-menu-li">
+                        
+                        <button class="main-menu-a" matButton [matMenuTriggerFor]="servicesMenuSmall">Tjänster</button>
+                        <mat-menu #servicesMenuSmall="matMenu">
+                            <button mat-menu-item><a class="main-menu-a" routerLink="/podd">Poddklippning</a></button>
+                            <button mat-menu-item><a class="main-menu-a" routerLink="/event">Eventplanering</a></button>
+                        </mat-menu>
+                    </li>
+                    <li class="main-menu-li"><a class="main-menu-a" routerLink="/course">Kurs</a></li>
+                    <li class="main-menu-li"><a class="main-menu-a" routerLink="/about">Om mig</a></li>
+                    <li class="main-menu-li"><a class="main-menu-a" routerLink="/contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </mat-menu>
+    </div>
+
+    
+    <div class="visible-menu">
+        <nav class="main-menu">
+            <ul>
+                <li class="main-menu-li current-page"><a class="main-menu-a" routerLink="/home">Hem</a></li>
+                <li class="main-menu-li">
+                    
+                    <button matButton [matMenuTriggerFor]="servicesMenuLarge">Tjänster</button>
+                    <mat-menu #servicesMenuLarge="matMenu">
+                        <button mat-menu-item><a class="main-menu-a" routerLink="/podd">Poddklippning</a></button>
+                        <button mat-menu-item><a class="main-menu-a" routerLink="/event">Eventplanering</a></button>
+                    </mat-menu>
+                </li>
+                <li class="main-menu-li"><a class="main-menu-a" routerLink="/course">Kurs</a></li>
+                <li class="main-menu-li"><a class="main-menu-a" routerLink="/about">Om mig</a></li>
+                <li class="main-menu-li"><a class="main-menu-a" routerLink="/contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header> -->
+
+<header>
+     <!-- <div class="branding">
+        <a routerLink="/home"><img class="logo" src="/assets/HiHat_logo_white_original.png" alt="logga" ></a>
+    </div> -->
+
+    
+    <!-- <div id="hamburger-menu">
+        <button matIconButton [matMenuTriggerFor]="hamburgerMenu" aria-label="Hamburger-menu">
+            <mat-icon class="hamburger-icon">menu</mat-icon>
+        </button> -->
+
+        <!-- <nav id="main-menu">
+            <ul class="main-menu-ul">
+                <li class="branding">
+                    <a routerLink="/home"><img class="logo" src="/assets/HiHat_logo_white_original.png" alt="logga" ></a>
+                </li>
+                <li class="burger" (click)="toggleMenu()">
+                    <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+                </li>
+                <li class="menu" [class.is-open]="isMenuOpen">
+                    <a class="main-menu-a" routerLink="/home">Hem</a>
+                    <button class="main-menu-a" matButton [matMenuTriggerFor]="servicesMenuSmall">Tjänster</button>
+                    <mat-menu #servicesMenuSmall="matMenu">
+                        <button mat-menu-item><a class="main-menu-a" routerLink="/podd">Poddklippning</a></button>
+                        <button mat-menu-item><a class="main-menu-a" routerLink="/event">Eventplanering</a></button>
+                    </mat-menu>
+                    <a class="main-menu-a" routerLink="/course">Kurs</a>
+                    <a class="main-menu-a" routerLink="/about">Om mig</a>
+                    <a class="main-menu-a" routerLink="/contact">Kontakt</a>
+                </li>
+            </ul>
+        </nav> -->
+
+    <nav id="main-menu">
+        <ul>
+            <!--logo-->
+            <li class="branding">
+                <a routerLink="/home"><img class="logo" src="/assets/HiHat_logo_white_original.png" alt="logga" ></a>
+            </li>
+
+            <!--hamburger icon-->
+            <li class="hamburger" (click)="toggleMainMenu()">
+                <i class="material-icons">{{ isMainMenuOpen ? "close" : "menu" }}</i>
+            </li>
+
+            <!--menu content-->
+            <li class="menu-content" [class.is-open]="isMainMenuOpen">
+                <a class="menu-item top-item" routerLink="/home">Hem</a>
+                <!-- <button class="menu-item no-style" matButton [matMenuTriggerFor]="servicesMenuSmall">Tjänster</button>
+                    <mat-menu #servicesMenuSmall="matMenu" panelClass="custom-menu">
+                        <button mat-menu-item class="services-menu-item"><a  routerLink="/podd">Poddklippning</a></button>
+                        <button mat-menu-item><a class="services-menu-item" routerLink="/event">Eventplanering</a></button>
+                </mat-menu> -->
+                <a class="menu-item" routerLink="/podd" >Poddklippning</a>
+                <a class="menu-item" routerLink="/event" >Eventplanering</a>
+                <a class="menu-item" routerLink="/course" >Kurs</a>
+                <a class="menu-item" routerLink="/about" >Om mig</a>
+                <a class="menu-item" routerLink="/contact" >Kontakt</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+

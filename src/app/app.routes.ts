@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home-component/home-component';
-import { PoddComponent } from './podd-component/podd-component';
-import { EventComponent } from './event-component/event-component';
-import { CourseComponent } from './course-component/course-component';
-import { AboutComponent } from './about-component/about-component';
-import { ContactComponent } from './contact-component/contact-component';
-import { NotFoundComponent } from './not-found-component/not-found-component';
+import { HomeComponent } from './pages/home-component/home-component';
+import { PoddComponent } from './pages/podd-component/podd-component';
+import { EventComponent } from './pages/event-component/event-component';
+import { CourseComponent } from './pages/course-component/course-component';
+import { AboutComponent } from './pages/about-component/about-component';
+import { ContactComponent } from './pages/contact-component/contact-component';
+import { NotFoundComponent } from './pages/not-found-component/not-found-component';
 
 
 export const routes: Routes = [
