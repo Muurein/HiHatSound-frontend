@@ -1,5 +1,4 @@
-@use "../../styles/abstracts/variables.scss" as v;
-
+@use "abstracts/variables" as v;
 
 header {
     margin-bottom: 30px;
@@ -14,7 +13,7 @@ header {
     margin: 0;
     padding: 0;
     padding-right: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     background: v.$primary-color;
     color: v.$menu-text-color;
   }
@@ -46,7 +45,6 @@ header {
     }
 
 }
-
 
 .menu-content {
     display: none;
@@ -91,6 +89,10 @@ header {
     letter-spacing: 3px;
 }
 
+.menu-item:hover {
+    background-color: v.$tertiary-color;
+    color: v.$secondary-color
+}
 // .secondary-menu-item {
 //     display: block;
 //     text-align: center;

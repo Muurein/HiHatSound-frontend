@@ -1,0 +1,88 @@
+@use "abstracts/variables" as v;
+
+//images above small textboxes with informaiton
+@mixin info-image-div {
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+
+@mixin info-image-div-small {
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+
+@mixin info-image-small {
+    width: 270px;
+    height: 320px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+@mixin info-image-large {
+    width: 270px;
+    height: 320px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+
+//images used for screenwide-decorations
+@mixin decoration-image-small {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@mixin decoration-image-large {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
+//images used to represent podcasts
+@mixin podds-image-small {
+    width: 150px;
+    height: 150px;
+}
+
+@mixin podds-image-large {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+//light brown button
+@mixin brown-book-button-small {
+    border: none;
+    border-radius: 15px;
+    width: 100px;
+    height: 50px;
+    background-color: v.$primary-color;
+    color: v.$secondary-color;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+@mixin brown-book-button-large {
+    border: none;
+    border-radius: 15px;
+    width: 160px;
+    height: 50px;
+    background-color: v.$primary-color;
+    color: v.$secondary-color;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+
+
