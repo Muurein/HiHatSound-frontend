@@ -1,16 +1,21 @@
 @use "abstracts/variables" as v;
 
+//*********************************************************************
 //images above small textboxes with informaiton
-@mixin info-image-div {
-    margin-right: auto;
-    margin-left: auto;
-    width: 70%;
-}
-
+//*********************************************************************
 @mixin info-image-div-small {
     margin-right: auto;
     margin-left: auto;
-    width: 70%;
+    width: 270px;
+    height: 320px;
+}
+
+@mixin info-image-div-large {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    width: 270px;
+    height: 320px;
 }
 
 @mixin info-image-small {
@@ -21,15 +26,51 @@
 }
 
 @mixin info-image-large {
-    width: 270px;
-    height: 320px;
+    width: 300px;
+    height: 350px;
     border-radius: 20px;
     object-fit: cover;
 }
 
+// @mixin info-section-small {
+
+// }
 
 
+@mixin info-section-large {
+    margin-top: 50px;
+}
+
+@mixin info-article-small {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    width: 70%;
+}
+
+@mixin info-article-flexbox {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+}
+
+@mixin info-article-text-small {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 250px;
+}
+
+
+
+
+
+
+//*********************************************************************
 //images used for screenwide-decorations
+//*********************************************************************
 @mixin decoration-image-small {
     margin-right: 0;
     margin-left: 0;
@@ -39,14 +80,17 @@
 }
 
 @mixin decoration-image-large {
+    margin-top: 15px;
+    margin-bottom: 15px;
     width: 100%;
     height: 400px;
     object-fit: cover;
 }
 
 
-
+//*********************************************************************
 //images used to represent podcasts
+//*********************************************************************
 @mixin podds-image-small {
     width: 150px;
     height: 150px;
@@ -58,8 +102,9 @@
 }
 
 
-
+//*********************************************************************
 //light brown button
+//*********************************************************************
 @mixin brown-book-button-small {
     border: none;
     border-radius: 15px;
@@ -73,16 +118,19 @@
 }
 
 @mixin brown-book-button-large {
-    border: none;
-    border-radius: 15px;
     width: 160px;
     height: 50px;
-    background-color: v.$primary-color;
-    color: v.$secondary-color;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
 }
 
 
+@mixin p-presentation-small {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    width: 70%;
+}
 
+@mixin p-presentation-large {
+    margin-bottom: 50px;
+    width: 40%;
+}

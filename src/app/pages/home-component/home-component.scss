@@ -1,0 +1,72 @@
+@use "abstracts/variables" as v;
+@use "abstracts/mixins" as m;
+
+.hero-image {
+    margin-top: 0;
+}
+
+.p-presentation {
+    @include m.p-presentation-small;
+}
+
+.info-section h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.info-article {
+    @include m.info-article-small;
+}
+
+.info-article h3,
+.info-article p {
+    @include m.info-article-text-small
+}
+
+.info-image-div {
+    @include m.info-image-div-small;
+}
+
+.info-image {
+    @include m.info-image-small;
+}
+
+
+//wide images used for decoration
+.decoration-image {
+    @include m.decoration-image-small;
+}
+
+
+@media (min-width: 1024px) {
+
+     .info-section {
+        @include m.info-section-large;
+    }
+
+    .info-flexbox  {
+        @include m.info-article-flexbox;
+        width: 60%;
+    }
+
+    .info-section h2 {
+        margin-bottom: 35px;
+    }
+
+    .info-image-div {
+        @include m.info-image-div-large;
+    }
+
+    .info-image {
+        @include m.info-image-large;
+    }
+
+
+    .decoration-image {
+        @include m.decoration-image-large;
+    }
+
+    .p-presentation { 
+        @include m.p-presentation-large;
+    }
+}
