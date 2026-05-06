@@ -1,0 +1,9 @@
+<h2>Poddar jag har klippt</h2>
+
+<div class="gridbox" *ngIf="poddPortfolio$ | async as podds">
+  <div class="card" *ngFor="let podd of podds">
+      <img class="podd-image" [src]="podd.imageUrl" [alt]="podd.title" >
+
+      <a [href]="podd.spotifyLink" target="_blank">Lyssna på Spotify</a>
+  </div>
+</div>

@@ -1,7 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, EnvironmentInjector, signal } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { Header } from './partials/header/header';
-
 
 
 @Component({

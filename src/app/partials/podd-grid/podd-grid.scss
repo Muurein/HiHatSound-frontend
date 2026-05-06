@@ -1,0 +1,43 @@
+@use "abstracts/variables" as v;
+@use "abstracts/mixins" as m;
+
+h2 {
+    margin-top: 40px;
+}
+
+.gridbox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 20px;
+    width: 40%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 150px;
+    text-align: center;
+}
+
+.podd-image {
+    @include m.podds-image-small;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: v.$text-link-color;
+    font-weight: 600;
+}
+
+.card a:hover {
+    color: v.$tertiary-color;
+    cursor: pointer;
+}
+
+
+
