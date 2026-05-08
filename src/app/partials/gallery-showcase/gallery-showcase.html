@@ -1,0 +1,6 @@
+<div class="flexbox" *ngIf="galleryShowcase$ | async as galleries">
+    <div class="gallery-div" *ngFor="let gallery of galleries">
+        <img class="gallery-image" [src]="gallery.imageUrl" alt="Bild från event">
+    </div>
+</div>
+

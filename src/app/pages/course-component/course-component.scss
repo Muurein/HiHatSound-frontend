@@ -1,0 +1,23 @@
+@use "abstracts/variables" as v;
+@use "abstracts/mixins" as m;
+
+
+form {
+    background-color: v.$tertiary-color;
+}
+
+label {
+    color: white;
+    font-weight: 600;
+
+}
+
+input {
+    border-radius: 25px;
+    width: 70%;
+    height: 48px;
+}
+
+button {
+    @include m.brown-book-button-small;
+}

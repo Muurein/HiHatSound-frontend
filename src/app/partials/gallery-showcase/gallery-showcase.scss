@@ -1,0 +1,31 @@
+@use "abstracts/variables" as v;
+@use "abstracts/mixins" as m;
+
+// .flexbox {
+//     @include m.info-article-flexbox;
+//     // width: 100%;
+//     // height: 600px;
+// }
+
+.gallery-div {
+    @include m.info-article-small;
+    width: 270px;
+}
+
+.gallery-image {
+    @include m.info-image-small;
+}
+
+
+//styling for large screens
+@media (min-width: 1024px) {
+
+    .flexbox {
+        @include m.info-article-flexbox;
+        margin-top: 70px;
+    }
+
+    .gallery-image {
+        @include m.info-image-large;
+    }
+}
