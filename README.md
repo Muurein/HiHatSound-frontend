@@ -1,59 +1,52 @@
 # HiHatSoundFrontend
+Projektet är en responsiv webbplats för företaget Hi-Hat Sound, som erbjuder tjänster som poddklippning. Applikationen presenterar företagets tjänster, ger besökaren information om företaget och visar en lista över poddar som företaget klippt samt ett galleri med bilder från event företaget har jobbat på. Poddarna och galleriet hämtas från en separat backend.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+Projektet byggdes som examensarbetet för min utbildning och inom tidsramarna för detta kunde inte företagets egna texter, bilder eller poddar läggas in. Textinnehållet består av generella "Lorem ipsum"-texter, bilderna kommer från [pexels.com](https://www.pexels.com/sv-se/) och poddarna är påhittade. 
 
-## Development server
+## Relaterade projekt
+Backend: https://github.com/Muurein/HiHatSound-backend_admin/tree/dev 
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
+## Tekniker
+- Angular v.21
+- Angular Router
+- Angular Material
+- TypeScript
+- RxJS
+- SCSS
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Funktioner
+- Sex undersidor: hem, poddklippning, eventplanering, kurs, om mig och kontakt.
+- Återanvändbara komponenter som header och footer.
+- En lista över poddar samt ett galleri vars data hämtas från API:t i backend.
+- TypeScript-modeller och services för API-datan.
+- Styling med SCSS som använder variabler och mixins.
 
-## Code scaffolding
+## Projektstruktur
+src/
+├── app/
+│   ├── models/          # TypeScript-interfaces för API-data
+│   ├── pages/           # Komponenter på sidonivå
+│   ├── partials/        # Återanvändbara komponenter
+│   ├── services/        # Services som kommunicerar med backend
+│   ├── styles/          # SCSS
+│   ├── app.config.ts
+│   └── app.routes.ts
+├── environments/        # API-konfiguration
+└── main.ts
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
+## Kom igång med projektet
+Backend behöver köras för att poddarna och galleriet ska kunna visas.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Tekniska förutsättningar
+- Node.js
+- npm
+- Angular v.21
+- SCSS v.1.99
 
-```bash
-ng generate --help
-```
+### Kommandon
+- npm install: installera dependencies
+- npm start: starta frontend
 
-## Building
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
