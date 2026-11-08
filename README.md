@@ -23,17 +23,15 @@ Backend: https://github.com/Muurein/HiHatSound-backend_admin/tree/dev
 - Styling med SCSS som använder variabler och mixins.
 
 ## Projektstruktur
-src/
-├── app/
-│   ├── models/          # TypeScript-interfaces för API-data
-│   ├── pages/           # Komponenter på sidonivå
-│   ├── partials/        # Återanvändbara komponenter
-│   ├── services/        # Services som kommunicerar med backend
-│   ├── styles/          # SCSS
-│   ├── app.config.ts
-│   └── app.routes.ts
-├── environments/        # API-konfiguration
-└── main.ts
+Nedanstående mappar ligger i `src/app/`:
+- `models`: TypeScript-interfaces för API-data
+- `pages`: Komponenter på sidonivå.
+- `partials`: Återanvändbara komponenter.
+- `services`: Services som kommunicerar med backend
+- `styles`: SCSS.
+
+Nedanstående mapp ligger i rotmappen:
+- `environments`: API-konfiguration 
 
 
 ## Kom igång med projektet
