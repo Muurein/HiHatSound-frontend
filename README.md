@@ -1,4 +1,4 @@
-# HiHatSoundFrontend
+# Hi-HatSound - frontend
 Projektet är en responsiv webbplats för företaget Hi-Hat Sound, som erbjuder tjänster som poddklippning. Applikationen presenterar företagets tjänster, ger besökaren information om företaget och visar en lista över poddar som företaget klippt samt ett galleri med bilder från event företaget har jobbat på. Poddarna och galleriet hämtas från en separat backend.
 
 Projektet byggdes som examensarbetet för min utbildning och inom tidsramarna för detta kunde inte företagets egna texter, bilder eller poddar läggas in. Textinnehållet består av generella "Lorem ipsum"-texter, bilderna kommer från [pexels.com](https://www.pexels.com/sv-se/) och poddarna är påhittade. 
